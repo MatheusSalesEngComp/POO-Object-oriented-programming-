@@ -1,0 +1,63 @@
+>>>>>>>> INSERT criação
+criar azul P
+mostrar
+seca
+enxugar 5
+mostrar
+seca
+enxugar 5
+mostrar
+enxugar 5
+mostrar
+torcer
+mostrar
+end
+======== EXPECT
+$criar azul P
+$mostrar
+Cor: azul, Tamanho: P, Umidade: 0
+$seca
+sim
+$enxugar 5
+$mostrar
+Cor: azul, Tamanho: P, Umidade: 5
+$seca
+nao
+$enxugar 5
+toalha encharcada
+$mostrar
+Cor: azul, Tamanho: P, Umidade: 10
+$enxugar 5
+toalha encharcada
+$mostrar
+Cor: azul, Tamanho: P, Umidade: 10
+$torcer
+$mostrar
+Cor: azul, Tamanho: P, Umidade: 0
+$end
+<<<<<<<< FINISH
+
+
+>>>>>>>> INSERT criação
+criar verde G
+mostrar
+enxugar 30
+mostrar
+enxugar 1
+mostrar
+end
+======== EXPECT
+$criar verde G
+$mostrar
+Cor: verde, Tamanho: G, Umidade: 0
+$enxugar 30
+toalha encharcada
+$mostrar
+Cor: verde, Tamanho: G, Umidade: 30
+$enxugar 1
+toalha encharcada
+$mostrar
+Cor: verde, Tamanho: G, Umidade: 30
+$end
+<<<<<<<< FINISH
+
