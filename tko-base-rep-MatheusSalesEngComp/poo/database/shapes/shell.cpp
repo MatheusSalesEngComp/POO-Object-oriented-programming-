@@ -133,24 +133,20 @@ int main() {
             break;                                  
         }
         else if (cmd == "show") { 
-            // Imprima as formas, uma por linha
             for (const auto& shape : shapes) {
                 cout << shape->toString() << endl;
             }
         }
         else if (cmd == "circle") { 
-            // Crie um novo circulo e adicione ao vetor
             double x{}, y{}, radius{};
             ss >> x >> y >> radius;
             shapes.push_back(make_shared<Circle>(Point(x, y), radius));
         }
         else if (cmd == "rect") {
-            // Crie um retangulo e insira no vetor
             double x1{}, y1{}, x2{}, y2{};
             ss >> x1 >> y1 >> x2 >> y2;
             shapes.push_back(make_shared<Rectangle>(Point(x1, y1), Point(x2, y2)));        }
         else if (cmd == "info") {
-            // Imprima as informações de área e perímetro de todas as formas
             for (const auto& shape : shapes) {
                 cout << fixed << setprecision(2);
                 cout << shape->getName() << ": ";
